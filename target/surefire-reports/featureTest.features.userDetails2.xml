@@ -1,0 +1,35 @@
+<testsuite failures="0" name="featureTest/features/userDetails2.feature" skipped="0" tests="2" time="4.617221">
+  <testcase classname="featureTest.features.userDetails2" name="user details 3" time="2.295809">
+    <system-out>* def expectedOutput = read('../data/result3.json') ....................... passed
+* def feature = read('userDetails1.feature') .............................. passed
+* def result = call feature ............................................... passed
+Given url 'https://reqres.in/api/users/3' ................................. passed
+And method GET ............................................................ passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == expectedOutput[0] ................................... passed
+Then print 'result....',result ............................................ passed
+* def first_name = result.response.data.first_name ........................ passed
+Then print 'first_name_value---',first_name ............................... passed</system-out>
+  </testcase>
+  <testcase classname="featureTest.features.userDetails2" name="user details 4" time="2.321411">
+    <system-out>* def expectedOutput = read('../data/result3.json') ....................... passed
+* def feature = read('userDetails1.feature') .............................. passed
+* def result = call feature ............................................... passed
+Given url 'https://reqres.in/api/users/3' ................................. passed
+And method GET ............................................................ passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == expectedOutput[0] ................................... passed
+Then print 'result....',result ............................................ passed
+* def first_name = result.response.data.first_name ........................ passed
+Then print 'first_name_value---',first_name ............................... passed
+* def expectedOutput = read('../data/result3.json') ....................... passed
+* def feature = read('userDetails1.feature') .............................. passed
+* def result = call feature ............................................... passed
+Given url 'https://reqres.in/api/users/4' ................................. passed
+And method GET ............................................................ passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed</system-out>
+  </testcase>
+</testsuite>

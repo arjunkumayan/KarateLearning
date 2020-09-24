@@ -1,0 +1,23 @@
+<testsuite failures="0" name="featureTest/features/userDetails1.feature" skipped="0" tests="2" time="3.131798">
+  <testcase classname="featureTest.features.userDetails1" name="user details 2" time="1.369797">
+    <system-out>* def expectedOutput1 = read('../../feature/test-data.json') .............. passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+And method GET ............................................................ passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == expectedOutput1[1] .................................. passed</system-out>
+  </testcase>
+  <testcase classname="featureTest.features.userDetails1" name="user details 6" time="1.762001">
+    <system-out>* def expectedOutput1 = read('../../feature/test-data.json') .............. passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+And method GET ............................................................ passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == expectedOutput1[1] .................................. passed
+* def expectedOutput1 = read('../../feature/test-data.json') .............. passed
+Given url 'https://reqres.in/api/users/6' ................................. passed
+And method GET ............................................................ passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed</system-out>
+  </testcase>
+</testsuite>

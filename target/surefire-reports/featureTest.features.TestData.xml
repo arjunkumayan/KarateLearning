@@ -1,0 +1,27 @@
+<testsuite failures="0" name="featureTest/features/TestData.feature" skipped="0" tests="2" time="2.739694">
+  <testcase classname="featureTest.features.TestData" name="user details 2" time="1.369757">
+    <system-out>* def expectedOutput = read('../data/result3.json') ....................... passed
+* def expectedOutput1 = read('../../feature/test-data.json') .............. passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+And method GET ............................................................ passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == expectedOutput1[1] .................................. passed</system-out>
+  </testcase>
+  <testcase classname="featureTest.features.TestData" name="user details 3" time="1.369937">
+    <system-out>* def expectedOutput = read('../data/result3.json') ....................... passed
+* def expectedOutput1 = read('../../feature/test-data.json') .............. passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+And method GET ............................................................ passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == expectedOutput1[1] .................................. passed
+* def expectedOutput = read('../data/result3.json') ....................... passed
+* def expectedOutput1 = read('../../feature/test-data.json') .............. passed
+Given url 'https://reqres.in/api/users/3' ................................. passed
+And method GET ............................................................ passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+And match response == expectedOutput1[0] .................................. passed</system-out>
+  </testcase>
+</testsuite>
